@@ -1,0 +1,37 @@
+.principalFooter {
+    background-color: #FFEC9E; 
+    padding: 30px; 
+    text-align: left; 
+    bottom: 0; 
+    width: 100%; 
+    display:flex;
+    justify-content: start;
+  }
+
+  .principalFooter a {
+    color: #BC4304; 
+    font-weight: bold;
+    text-decoration: none; 
+    margin: 0px 10px; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+
+  .principalFooter a:hover {
+    text-decoration: underline 3px; 
+  }
+  .principalFooter svg{
+    width: 22px;
+
+  }
+  .enlaces{
+    justify-content: space-around;
+    width: 85%;
+
+  }
+  .separados svg:hover{
+   -webkit-transform: scale(2.5);
+    background-color: #BC4304;
+  }
+  
+  
