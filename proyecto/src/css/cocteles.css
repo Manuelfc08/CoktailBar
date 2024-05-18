@@ -1,61 +1,29 @@
-.coctelesGeneral{
-  display:flex;
-  padding: 5%;
-  justify-content: space-between;
+.cocteles div:hover{
+  filter: drop-shadow(5px 5px 5px black);
+  transition: all 400ms ease-in-out;
+}
+.cocteles div{
+  transition: all 400ms ease-in-out;
+}
+.container .cocteles {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
-
-.galeriaCocteles{
-    display: grid;
-     grid-template-columns: repeat(4,20%);
-     grid-template-rows: repeat(2, 44.5%);
-     column-gap: 5%;
-     row-gap: 7%;
-    
-}
-.galeriaCocteles div{
-  padding: 5%;  
-  border-radius: 5px;
-  text-align: center;
-}
-.galeriaCocteles div:hover{
-  border: #A3D8FF solid;
-  border-width: thick;
-}
-
-.menuLateral{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 10%;
-}
-.menuLateral button{
-  padding: 5%;
-  background-color: #FFEC9E;
-  margin-bottom: 15%;
-  color: #8C4827; 
-  font-weight: bold;
-  border: #8C4827 solid 2px;
-  padding: 20px;
-}
-.menuLateral button:hover{
-    background-color: #A3D8FF; 
-    border:#FFEC9E solid 2px;
-    color:#8C4827;
-
-}
-
-  .galeriaCocteles img {
+  .cocteles img {
     width:100%;
     margin-bottom: 18px;
     border-radius: 5px;
 }
 
-.galeriaCocteles p {
+.cocteles p {
   color: #8C4827;
   font-weight: bold; 
   margin-bottom: -8px;
 }
+
 
 
 

@@ -1,0 +1,77 @@
+/*El bloque central dónde se ubican platos y pestañas*/
+.container {
+    padding: 30px;
+    width: 90%;
+    margin: 0px auto;
+    align-items: center;
+    text-align: center;
+}
+
+/*Todas las pestañas*/
+.tabs-country {
+    width: 100%;
+    display: grid;
+    /*tratará siempre que todos encajen de la misma forma (para responsive)*/
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /*Hay 8 pestañas, pero todas en la misma row, si fuese una debajo de otra dividiría 1/8 para que todas ocupen lo mismo*/
+    grid-template-rows: 1fr;
+    gap: 2px;
+}
+
+/*El que simula cada pestaña*/
+.tabs-country div {
+    border-right: 8px solid transparent;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 15px;
+
+    border-bottom: 30px solid #99A3A4;
+    color: white;
+    height: 0;
+    line-height: 30px;
+}
+
+.tabs-country div button {
+  /*Ponemos el transition para ralentizar el efecto y que sea perceptible*/
+    transition: all 400ms ease-in-out;
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: #99A3A4;
+}
+
+.tabs-country div button:hover {
+    /*Transición en las letras para que aumente el tamaño letra y el relleno sea más grueso*/
+    transition: all 400ms ease-in-out;
+    font-weight: 900;
+    font-size: 13px;
+}
+
+.container .foods {
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr);
+    gap: 20px;
+}
+
+
+.container .food img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.name-food {
+    color: #8C4827;
+    font-weight: bold;
+    margin-bottom: -8px;
+}
+
+.foods div:hover {
+    filter: drop-shadow(5px 5px 5px black);
+    transition: all 400ms ease-in-out;
+}
+
+.foods div {
+    transition: all 400ms ease-in-out;
+}
