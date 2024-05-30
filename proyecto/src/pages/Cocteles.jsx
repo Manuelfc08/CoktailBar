@@ -33,16 +33,15 @@ const Cocteles = () => {
     }, []);
 
     return (
-        <div className="container">
-            <div className="cocteles">
+        <>
+            <div className="products">
                 {cocteles.map((coctel) => (
                     <CeldaCoctel coctel={coctel} />
                 ))}
             </div>
-        </div>
+        </>
     );
 };
 
 export default Cocteles;
-
 

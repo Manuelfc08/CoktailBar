@@ -18,20 +18,19 @@
     margin: 0 10px;
     position: absolute; 
     top:36%;
-    
-    
 }
 
 .separados{
     margin: auto;
 }
+
 .separados img{
     width: 100px;
     position: absolute;
     left:45%;
     top:7%;
-
 }
+
 /*Animación para el logo*/
 @keyframes rotarLogo{
     from{transform: rotateY(0deg);}

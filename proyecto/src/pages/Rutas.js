@@ -7,7 +7,7 @@ import {
 
 import Cocteles from './Cocteles';
 import PlatosTipicos from './PlatosTipicos';
-import Prueba from './Prueba';
+import Categorias from './Categorias';
 
 const Rutas = () => {
     return (
@@ -16,10 +16,10 @@ const Rutas = () => {
                 <Route exact path="/" element={<Cocteles />} />
                 <Route exact path="/cocteles" element={<Cocteles />}></Route>
                 <Route exact path="/platos" element={<PlatosTipicos />}></Route>
-                <Route exact path="/prueba" element={<Prueba />}></Route>
+                <Route exact path="/categorias" element={<Categorias />}></Route>
                 <Route exact path="*" element={<h1>Error</h1>} />
             </Routes>
         </Router>
     );
 }
-export default Rutas
+export default Rutas;
