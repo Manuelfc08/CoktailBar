@@ -1,0 +1,20 @@
+.menu-header{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 100px));
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+.menu-header button{
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    color: #BC4304; 
+    font-weight: bold;
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-header button:hover{
+    filter: drop-shadow(5px 5px 5px black);
+    transition: all 400ms ease-in-out;
+}

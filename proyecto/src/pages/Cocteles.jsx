@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
-import CeldaCoctel from './CeldaCoctel'
+import CeldaCoctel from './Celda';
+import Error from "./Error";
 import axios from "axios";
-import '../css/cocteles.css';
+
 
 const Cocteles = () => {
     // Declaramos el estado 'cocteles' y su función para actualizarlo
     const [cocteles, setCocteles] = useState([]);
+    const [error, setError] = useState("");
+    const [loading, setLoading] = useState(true);
     // Función para obtener 8 cócteles de la API
     const obtenerCocteles = () => {
         let nuevosCocteles = [];
@@ -22,25 +25,32 @@ const Cocteles = () => {
                     }
                 })
                 .catch((error) => {
-                    console.log(error);
+                    setError(error);
                 });
         }
+
     };
 
     // Efecto secundario con useEffect para cargar 8 cócteles al inicio
     useEffect(() => {
+        setLoading(true);
         obtenerCocteles();
+        setLoading(false);
     }, []);
 
-    return (
-        <>
-            <div className="products">
-                {cocteles.map((coctel) => (
-                    <CeldaCoctel coctel={coctel} />
-                ))}
-            </div>
-        </>
-    );
+    if (!error) {
+        return (
+            <>  {!loading ?
+                <div className="products">
+                    {cocteles.map((coctel) => (
+                        <CeldaCoctel imagen={coctel.strDrinkThumb} nombre={coctel.strDrink} />
+                    ))}
+                </div> : <div><span class="loader"></span></div>}
+            </>
+        )
+    } else {
+        return <Error message={error} />
+    }
 };
 
 export default Cocteles;
