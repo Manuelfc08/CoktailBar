@@ -8,6 +8,7 @@ import {
 import Cocteles from './Cocteles';
 import PlatosTipicos from './PlatosTipicos';
 import Categorias from './Categorias';
+import Ingredientes from './Ingredientes';
 
 const Rutas = () => {
     return (
@@ -17,6 +18,7 @@ const Rutas = () => {
                 <Route exact path="/cocteles" element={<Cocteles />}></Route>
                 <Route exact path="/platos" element={<PlatosTipicos />}></Route>
                 <Route exact path="/categorias" element={<Categorias />}></Route>
+                <Route exact path="/ingredientes" element={<Ingredientes />}></Route>
                 <Route exact path="*" element={<h1>Error</h1>} />
             </Routes>
         </Router>

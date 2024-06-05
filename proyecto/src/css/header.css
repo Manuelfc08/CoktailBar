@@ -6,18 +6,20 @@
 }
 .principalHeader{
     background-color: #FFEC9E; 
-    padding: 30px;  
+    padding: 30px;
+    height:150px;
     font-size: xx-large;
     position: relative;
-    height: 120px;
+}
+.grid-header{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
 }
 
 .principalHeader a{
     color: #BC4304; 
     text-decoration: none; 
     margin: 0 10px;
-    position: absolute; 
-    top:36%;
 }
 
 .separados{
@@ -26,9 +28,6 @@
 
 .separados img{
     width: 100px;
-    position: absolute;
-    left:45%;
-    top:7%;
 }
 
 /*Animación para el logo*/

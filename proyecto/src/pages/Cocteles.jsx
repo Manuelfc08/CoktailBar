@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import CeldaCoctel from './CeldaCoctel'
+import CeldaCoctel from './Celda';
 import axios from "axios";
-import '../css/cocteles.css';
+
 
 const Cocteles = () => {
     // Declaramos el estado 'cocteles' y su función para actualizarlo
@@ -36,7 +36,7 @@ const Cocteles = () => {
         <>
             <div className="products">
                 {cocteles.map((coctel) => (
-                    <CeldaCoctel coctel={coctel} />
+                    <CeldaCoctel imagen={coctel.strDrinkThumb} nombre={coctel.strDrink} />
                 ))}
             </div>
         </>

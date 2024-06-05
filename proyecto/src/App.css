@@ -33,11 +33,9 @@
   display: grid;
   grid-template-areas:
     "header header header header header"
-    "menu  container container container container"
-    "menu  container container container container"
-    "menu  container container container container"
-    "menu  container container container container"
-    "menu  container container container container"
+    "container container container container container"
+    "container container container container container"
+    "container container container container container"
     "footer footer footer footer footer";
 }
 

@@ -1,4 +1,3 @@
-import '../css/cocteles.css';
 
 export default function Menu() {
     return (

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import CeldaCoctel from "./Celda";
 import "../css/categorias.css";
 
 export default function Categorias() {
@@ -48,12 +49,7 @@ export default function Categorias() {
             <div className="products">
                 {drinks !== undefined && drinks.length > 0 
                 ? drinks.slice(0,8).map(drink => {
-                        return (
-                            <div className="drink">
-                                <img src={drink.strDrinkThumb} alt={drink.strDrink}></img>
-                                <p>{drink.strDrink}</p>
-                            </div>
-                        )
+                        return <CeldaCoctel imagen={drink.strDrinkThumb} nombre={drink.strDrink}/>
                     })
                 : <h1>No hay bebidas por el momento</h1>}
             </div>
