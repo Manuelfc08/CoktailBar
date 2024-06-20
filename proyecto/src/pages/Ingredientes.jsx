@@ -17,7 +17,6 @@ export default function Ingredientes() {
   contienen el ingrediente especificado. Si encuentra bebidas, 
   devuelve las primeras 14; si no, devuelve un array vacío. */
   function getDrinks(ingredient) {
-
     axios.get(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredient}`)
       .then((response) => {
         if (
@@ -165,6 +164,7 @@ export default function Ingredientes() {
       </>
     );
   }
+
 
   /*Permite al usuario buscar bebidas por ingrediente, 
   muestra una lista de bebidas encontradas y 
